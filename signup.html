@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입 - AIFullCine</title>
+    <link rel="stylesheet" href="./css/signup.css" />
+  </head>
+  <body>
+    <div class="auth-card">
+      <div class="auth-header">
+        <a href="CINEMA_search.html" class="logo-container">
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 40 40"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle cx="20" cy="20" r="20" fill="var(--point-sage)" />
+            <polygon points="16,12 16,28 28,20" fill="var(--bg-midnight)" />
+          </svg>
+          AIFullCine
+        </a>
+        <p>나만의 시네마틱 유니버스 시작하기</p>
+      </div>
+
+      <form action="#" method="POST">
+        <div class="form-group">
+          <label for="name">이름 (닉네임)</label>
+          <input type="text" id="name" placeholder="홍길동" required />
+        </div>
+        <div class="form-group">
+          <label for="email">이메일 주소</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">비밀번호</label>
+          <input
+            type="password"
+            id="password"
+            placeholder="최소 8자 이상"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password-confirm">비밀번호 확인</label>
+          <input
+            type="password"
+            id="password-confirm"
+            placeholder="비밀번호 재입력"
+            required
+          />
+        </div>
+
+        <div class="terms">
+          가입 시 AIFullCine의
+          <a href="#" style="color: var(--point-sage)">이용약관</a> 및
+          <a href="#" style="color: var(--point-sage)">개인정보 처리방침</a>에
+          동의하는 것으로 간주됩니다.
+        </div>
+
+        <button type="submit" class="btn-submit">가입하기</button>
+      </form>
+
+      <div class="auth-footer">
+        이미 계정이 있으신가요? <a href="login.html">로그인</a>
+      </div>
+    </div>
+  </body>
+</html>
